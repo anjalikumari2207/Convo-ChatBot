@@ -1,0 +1,84 @@
+<body>
+  <div class="chat-container">
+
+    <!-- HEADER -->
+    <header class="chat-header">
+      <div class="chat-header-inner">
+        <div class="chat-brand">
+          <!-- <div class="chat-logo">✨</div> -->
+          <div class="chat-brand-info">
+            <h1>
+              Conversational Chatbot
+              <span class="ai-badge">AI</span>
+            </h1>
+            <!-- <p>Convo-BOT</p> -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- WELCOME SCREEN -->
+    <div class="welcome-container" id="welcome">
+      <div class="welcome-content">
+        <!-- <div class="welcome-logo">✨</div> -->
+        <h2 class="welcome-title">Hey there! I'm Nova 👋</h2>
+    
+
+        <div class="welcome-features">
+          <div class="welcome-feature">
+            <!-- <div class="welcome-feature-icon">💬</div> -->
+            <!-- <p>Natural Conversations</p> -->
+          </div>
+          <div class="welcome-feature">
+            <!-- <div class="welcome-feature-icon"></div> -->
+            <!-- <p>Learns & Remembers</p> -->
+          </div>
+          <div class="welcome-feature">
+            <!-- <div class="welcome-feature-icon">❤️</div> -->
+            <!-- <p>Emotionally Aware</p> -->
+          </div>
+        </div>
+
+        <p class="welcome-prompts-label">Try saying</p>
+        <div class="welcome-prompts">
+          <button class="welcome-prompt" onclick="quickSend('Hi, I am Anjali')">
+            Hi, I am Anjali
+          </button>
+          <button class="welcome-prompt" onclick="quickSend('I feel stressed today')">
+            I feel stressed today
+          </button>
+          <button class="welcome-prompt" onclick="quickSend('What do you remember about me?')">
+            What do you remember about me?
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHAT AREA -->
+    <main class="messages-area">
+      <div class="messages-list" id="chatBox"></div>
+    </main>
+
+    <!-- INPUT -->
+    <footer class="input-area">
+      <div class="input-wrapper">
+        <div class="input-container">
+          <input type="hidden" id="userId" value="user_1" />
+          <input
+            id="message"
+            class="input-field"
+            type="text"
+            placeholder="Type a message..."
+          />
+          <button class="btn btn-send active" onclick="sendMessage()">➤</button>
+        </div>
+        <!-- <div class="input-hint">
+          Nova remembers your conversations to provide a personalized experience
+        </div> -->
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
